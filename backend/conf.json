@@ -1,10 +1,22 @@
 [
 	{
 		"tag": ["cost", "pricing", "price"],
-		"message": "The cost is so and so..."
+		"message": "The price is $139/year or $13/monthly."
 	},
 	{
 		"tag": ["privacy", "policy", "gdpr"],
-		"message": "Here is our privacy policy..."
+		"message": "You can find our privacy policy here https://femaleinvest.com/privacy."
+	},
+	{
+		"tag": ["merch", "tote", "bag", "gift"],
+		"message": "You can find our store here https://femaleinvest.store."
+	},
+	{
+		"tag": ["XIDontUnderstand"],
+		"message": "Sorry I don't understand that yet. Here is a list of commands I can do..."
+	},
+	{
+		"tag": ["XGoodbye"],
+		"message": "Is there anything else I can help you with?"
 	}
 ]

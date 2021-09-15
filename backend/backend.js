@@ -27,7 +27,17 @@ app.post('/', (req, res) => {
     wordArray.forEach(word => {
       topicArray = topicArray.concat(f.filter(topic => topic.tag.some(t => t == word )) )   
     });
+
+    if(topicArray.length < 1){
+      topicArray.push(f.find(topic => topic.tag == 'XIDontUnderstand') )
+    }else {
+    // TODO: This is a hack for adding the "can I help you with anything else" message. This should be done in another way..
+    topicArray.push(f.find(topic => topic.tag == 'XGoodbye'))
+    }
     
+    // Removes duplicates. TODO: It would have been smarter to not add duplicates in the first place :)
+    topicArray = [...new Set(topicArray)];
+
     res.send(JSON.stringify( {"res": topicArray } ));
   });
 })

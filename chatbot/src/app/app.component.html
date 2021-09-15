@@ -2,12 +2,15 @@
   <div class="logo"></div>
 </div>
 
-<div (click)="onClick()">click to get message</div>
+<div class="banner"> <h1>Hello</h1> </div>
 
-<div class="container">
-  Hello world!
-  <app-chat
-    [messages]="data"
-    (sendMessage)="onSend($event)"
-  ></app-chat>
+<div class="circles">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
 </div>
+
+<app-chat
+  [messages]="conversation"
+  (sendMessage)="onSend($event)"
+></app-chat>
