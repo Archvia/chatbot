@@ -1,6 +1,6 @@
 [
 	{
-		"tag": ["cost", "pricing", "price"],
+		"tag": ["pricing", "cost", "price"],
 		"message": "The price is $139/year or $13/monthly."
 	},
 	{
@@ -13,7 +13,7 @@
 	},
 	{
 		"tag": ["XIDontUnderstand"],
-		"message": "Sorry I don't understand that yet. Here is a list of commands I can do..."
+		"message": "Sorry I don't understand that yet. You can ask me about: "
 	},
 	{
 		"tag": ["XGoodbye"],
