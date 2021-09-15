@@ -32,3 +32,7 @@ When that is done compile the code by running
 `ng serve`
 
 When the project is compiled the console should log that it is running on http://localhost:4200/
+
+### Function
+Kamala responds to keywords (tags) found in a local database: `chatbot/backend/conf.json`.
+This file can be updated with new topics while the backend is running.
