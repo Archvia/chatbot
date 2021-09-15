@@ -18,7 +18,7 @@ app.use(express.json())
 app.post('/', (req, res) => {
   // Replace makes sure we are not searching for anything else than characters.
   // For example the user can write "merch?" and the "?" will be removed.
-  const wordArray = req.body.message.toLowerCase().replace(/[^a-z]/,'').split(' ');
+  const wordArray = req.body.message.toLowerCase().replace(/[^a-z ]/, '').split(' ');
   let f;
   fs.readFile('conf.json', function(err, data) {
     f = JSON.parse(data);
