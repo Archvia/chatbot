@@ -1,0 +1,22 @@
+<div class="chat">
+    <div class="header">
+        <div class="name">
+            Kamala
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="message" *ngFor="let message of messages">
+            {{message}}
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <textarea [(ngModel)]="newMessage" type="text" id="fname"  rows="3"></textarea>
+        <button (click)="onSend()">
+            <mat-icon>send</mat-icon>
+        </button>
+    </div>
+</div>
