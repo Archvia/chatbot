@@ -1,0 +1,10 @@
+[
+	{
+		"tag": ["cost", "pricing", "price"],
+		"message": "The cost is so and so..."
+	},
+	{
+		"tag": ["privacy", "policy", "gdpr"],
+		"message": "Here is our privacy policy..."
+	}
+]

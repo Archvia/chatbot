@@ -6,11 +6,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class FaqService {
 
-  private heroesUrl = 'http://localhost:8080/test';
+  private baseUrl = 'http://localhost:3000/';
 
   constructor(private http: HttpClient) { }
 
   getTopics() {
-    return this.http.get(this.heroesUrl);
+    return this.http.get(this.baseUrl);
+  }
+
+  postMessage(message: string){
+    console.log('posting..')
+    return this.http.post(this.baseUrl, { "message": message});
   }
 }
